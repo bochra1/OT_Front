@@ -1,40 +1,115 @@
-https://customer-support-pha07.netlify.app/
+# 🧩 Customer Support Zone — React Ticket Management App
 
-<!-- Question - 1 -->
-What is JSX, and why is it used?
+Customer Support Zone is a clean, efficient, and fully responsive ticket management application built using **React.js** and **React-Toastify**.  
+This project is **My First React Project**.
 
-<!-- Answer -->
-JavaScript XML (JSX) is a syntax extension that allows writing HTML-like code inside JavaScript. It is used because it makes UI code more readable and allows React to create elements efficiently.
+The application allows users to view customer support tickets, track progress, mark tasks as completed, and maintain real-time status updates with a modern UI inspired by a Figma design.
+
+---
+
+## 🚀 Live Demo  
+👉 *(Add your live project link here)*
+
+## 📦 GitHub Repository  
+👉 *[(https://github.com/mdtajrianrashid/Customer-Care-React-Project-A07)]*
+
+---
+
+# 📌 Features Overview
+
+## 📝 Customer Tickets  
+- Display all customer tickets in a **2-column grid layout**  
+- Each card shows:  
+  - Title  
+  - Description  
+  - Customer name  
+  - Priority  
+  - Created date  
+
+## 🔄 Task Status Section  
+- Clicking a ticket card moves it to the **In Progress** section  
+- Displays only the tasks currently being worked on  
+- Shows **Complete Button** for task resolution  
+
+## ✔️ Completion Flow  
+When clicking **Complete**:
+- Task removed from In Progress  
+- Task added to **Resolved List**  
+- In Progress counter decreases  
+- Resolved counter increases  
+- Ticket removed from main ticket list  
+- Toast notification appears  
+
+## 🎨 Banner Section  
+- Beautiful gradient background  
+- Displays real-time:  
+  - **In Progress Count**  
+  - **Resolved Count**  
+
+## 🔔 React-Toastify Integration  
+- All alerts replaced with modern toast notifications  
+- Smooth, user-friendly UX
+
+## 🌟 Features
+
+- ✔ Navbar (Logo + Menu + New Ticket Button)
+- ✔ Gradient banner with real-time counts
+- ✔ Ticket cards (2-column layout)
+- ✔ In Progress task section
+- ✔ Complete button logic
+- ✔ Resolved list
+- ✔ FULL toast notification system
+- ✔ JSON data with 10–15 tickets
+- ✔ Fully responsive layout
+- ✔ Clean and modern UI
+
+## 🧩 Additional Features  
+- Fully responsive for mobile devices  
+- Clean component structure  
+- JSON-based mock ticket data (10–15 items)  
+- Figma-inspired UI layout  
+
+---
+
+# 🏗️ Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Frontend | React.js |
+| Notifications | React-Toastify |
+| Styling | CSS / Figma-inspired design |
+| State Handling | React Hooks |
+| Data Source | Local JSON Ticket Data |
+| Build Tool | Vite / CRA |
 
 
+---
 
-<!-- Question - 2 -->
-What is the difference between State and Props?
+# 📦 Dependencies
 
-<!-- Answer -->
-State: Managed within a component, can change over time.
-Props: Passed from parent to child, read-only and cannot be modified by the child.
+"dependencies": {
+        "@fontsource/inter": "^5.2.8",
+        "@tailwindcss/vite": "^4.1.13",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+        "react-toastify": "^11.0.5",
+        "tailwindcss": "^4.1.13"
+      }
 
+# ⚙️ Installation & Setup
 
+## 1️⃣ Clone the Repository
 
-<!-- Question - 3 -->
-What is the useState hook, and how does it work?
+```bash
+git clone https://github.com/mdtajrianrashid/Customer-Care-React-Project-A07
+cd Customer-Care-React-Project-A07
+npm install
+npm run dev
 
-<!-- Answer -->
-useState is a React hook that lets functional components manage state. It returns an array with the current state value and a function to update it.
+The app will run on:
+👉 http://localhost:5173
 
+(or whichever port Vite shows)```
 
+# 🎉 Thank You!
 
-<!-- Question - 4 -->
-How can you share state between components in React?
-
-<!-- Answer -->
-By lifting the state up to a common parent and passing it down as props to child components.
-
-
-
-<!-- Question - 5 -->
-How is event handling done in React?
-
-<!-- Answer -->
- Events are handled using camelCase syntax (e.g., onClick) and functions are passed as event handlers inside JSX.
