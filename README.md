@@ -82,7 +82,6 @@ When clicking **Complete**:
 | Data Source | Local JSON Ticket Data |
 | Build Tool | Vite / CRA |
 
-
 ---
 
 # 📦 Dependencies
@@ -111,5 +110,17 @@ The app will run on:
 
 (or whichever port Vite shows)
 ```
+
+---
+
+## 👨‍💻 Author
+
+**Takian Rashid**  
+Frontend & Full-Stack Developer | Aspiring Software Engineer
+
+- **GitHub:** https://github.com/mdtakianrashid  
+- **LinkedIn:** https://www.linkedin.com/in/mdtakianrashid/
+
+---
 
 # 🎉 Thank You!
