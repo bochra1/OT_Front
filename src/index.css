@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@font-face {
+  font-family: 'NeoSansStd-Bold';
+  src: url('/fonts/NeoSansStd-Bold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  @apply bg-base-100 text-base-content;
+}
+
+/* Custom styles for your link */
+.neosans-link {
+  font-family: 'NeoSansStd-Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  height: auto;
 }

@@ -36,16 +36,15 @@ function App() {
 
   const fetchDashboardData = async () => {
     try {
-      const [statsRes, myOTsRes, allOts] = await Promise.all([
+      const [statsRes, myOTsRes] = await Promise.all([
         apiClient.get('/ot-requests/stats/my-dashboard'),
         apiClient.get('/ot-requests/my-ots'),
-        apiClient.get('/ot-requests/all-ots'),
-
       ]);
+
       setDashboardStats(statsRes.data);
       
       // Filter OTs by status
-      const allOTs = allOts.data || [];
+      const allOTs = myOTsRes.data || [];
       setInProgressOTs(allOTs.filter(ot => ot.status === 'IN_PROGRESS'));
       setCompletedOTs(allOTs.filter(ot => ot.status === 'CLOSED'));
     } catch (error) {
@@ -63,10 +62,11 @@ function App() {
     return <Login />;
   }
 
-  const displayInProgressCount = dashboardStats?.created.inProgress || dashboardStats?.assigned.inProgress || 0;
-  const displayResolvedCount = dashboardStats?.created.closed || dashboardStats?.assigned.total || 0;
+  const displayInProgressCount = dashboardStats?.created.inProgress || 0;
+  const displayResolvedCount = dashboardStats?.created.closed || 0;
   const displayAssignedCount = dashboardStats?.assigned.total || 0;
-  const displayAssignedInProgress = dashboardStats?.assigned.inProgress || dashboardStats?.created.inProgress || 0;
+  const displayAssignedInProgress = dashboardStats?.assigned.inProgress || 0;
+
   return (
     <div>
       <Navbar user={user} onLogout={logout} />      
