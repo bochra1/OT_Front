@@ -5,13 +5,6 @@ This project is **My First React Project**.
 
 The application allows users to view customer support tickets, track progress, mark tasks as completed, and maintain real-time status updates with a modern UI inspired by a Figma design.
 
----
-
-## 🚀 Live Demo  
-👉 *[(https://customer-care-react-project-a07-8dtf-ourmdna6f.vercel.app/)]*
-
-## 📦 GitHub Repository  
-👉 *[(https://github.com/mdtajrianrashid/Customer-Care-React-Project-A07)]*
 
 ---
 
